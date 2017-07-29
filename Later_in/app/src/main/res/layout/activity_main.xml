@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--android:layout_height="match_parent"-->
+<!--android:layout_width="match_parent"-->
+<!--android:orientation="vertical">-->
+<!--<LinearLayout-->
+<!--android:id="@+id/llOver"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:orientation="horizontal"-->
+<!--android:layout_marginTop="10dp">-->
+
+<!--<LinearLayout-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layoAut_height="wrap_content"-->
+<!--android:id="@+id/lltv1">-->
+
+<!--<LinearLayout-->
+<!--android:id="@+id/lltv"-->
+<!--android:layout_gravity="start"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:orientation="vertical"-->
+<!--android:layout_marginStart="30dp">-->
+
+<!--<ImageView-->
+<!--android:id="@+id/ivAppIcon"-->
+<!--android:layout_width="40dp"-->
+<!--android:layout_height="40dp"-->
+<!--android:src="@mipmap/newicon"-->
+<!--android:layout_marginLeft="12dp"/>-->
+<!--<TextView-->
+<!--android:id="@+id/mainTv"-->
+<!--android:text="Use Later In"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--tools:textStyle="bold"-->
+<!--android:layout_marginTop="8dp"/>-->
+
+<!--</LinearLayout>-->
+<!--</LinearLayout>-->
+
+<!--<LinearLayout-->
+<!--android:layout_gravity="end"-->
+<!--android:id="@+id/llbtn"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content">-->
+
+<!--<Button-->
+<!--android:id="@+id/btnGo"-->
+<!--android:text="GO"-->
+<!--android:layout_gravity="end"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_marginTop="20dp"-->
+<!--android:layout_marginRight="10dp" />-->
+
+<!--</LinearLayout>-->
+
+<!--</LinearLayout>-->
+
+<!--<ImageView-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="1dp"-->
+<!--android:background="@android:color/black" />-->
+
+<!--<GridView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:id="@+id/grid1"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:gravity="center"></GridView>-->
+
+<!--</LinearLayout>-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/rlRootOverall">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/rlRootHeadGridBottom">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rlHeaderOuter"
+            android:layout_alignParentTop="true">
+
+            <RelativeLayout
+                android:id="@+id/rlHeaderInner"
+                android:layout_gravity="start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/ivAppIcon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/newicon"
+                    android:layout_marginLeft="5dp" />
+                <TextView
+                    android:id="@+id/mainTv"
+                    android:text="Use Later In"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:textStyle="bold"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/ivAppIcon"/>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rlHeaderOuter">
+
+            <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/grid1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlButtonOuter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+
+            <RelativeLayout
+                android:layout_gravity="end"
+                android:id="@+id/rlButtonInner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/background_light">
+
+                <Button
+                    android:id="@+id/btnGo"
+                    android:text="GO"
+                    android:layout_gravity="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:onClick="fnBtnGoClicked"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+    <!--<GridView xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:id="@+id/grid1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center"></GridView>-->

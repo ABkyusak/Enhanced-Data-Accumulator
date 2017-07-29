@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:text="Images"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button" />
+
+    <Button
+        android:text="Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2" />
+
+    <Button
+        android:text="Video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/btn_star_big_off"
+        android:id="@+id/imageView"
+        android:layout_weight="0.73" />
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:id="@+id/fr_id"
+        android:background="@android:color/background_dark"
+        android:name="com.example.manshika.later_in.Fragment2">
+
+    </fragment>
+
+</LinearLayout>
